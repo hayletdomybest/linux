@@ -1,3 +1,7 @@
+"作者：趙楊
+"鏈接：https://www.zhihu.com/question/20151659/answer/106017689
+"來源：知乎
+"著作權歸作者所有。商業轉載請聯繫作者獲得授權，非商業轉載請註明出處
 set transparency=11 
 "set background=dark 
 syntax on
