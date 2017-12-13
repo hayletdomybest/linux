@@ -43,9 +43,9 @@ int main(int argc,char** argv)
 	{
 		fprintf(stderr,"set non block error\n");
 	}
-	fprintf(stderr," stdout after set non block fl:\n"
+	fprintf(stderr," stdout after set non block fl:\n");
 	display_fl(STDOUT_FILENO);
 	
-	
+	return 0;
 }
 
