@@ -3,6 +3,7 @@ CFLAGS  += -I./
 CC      ?=gcc
 SOURCES :=main.c func.c
 OBJECTS :=$(SOURCES:.c=.o)
+FILE	:= a.txt b.txt c.txt
 OUTPUT  :=tumask
 
 all: $(SOURCES) $(OUTPUT)
@@ -12,4 +13,4 @@ all: $(SOURCES) $(OUTPUT)
 $(OUTPUT): $(OBJECTS)
 	$(CC) -o $@ $^ 
 clean:
-	rm -f $(OUTPUT) $(OBJECTS)
+	rm -f $(OUTPUT) $(OBJECTS) $(FILE)
