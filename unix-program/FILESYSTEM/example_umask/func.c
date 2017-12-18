@@ -27,3 +27,12 @@ void readpermission(mode_t mode)
 	fprintf(stderr,"%s\n",ans);
 	free(ans);
 }
+//S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP|S_IROTH|S_IWOTH
+void createfile(const char* path,mode_t cmask)
+{
+	if((creat(path,cmask)<0))
+	{
+		fprintf(stderr,"creat file error\n");
+		return;
+	}
+}
